@@ -1,0 +1,62 @@
+/*MODAL*/
+
+.box_modal {
+    background: #0000004d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 0.3s all;
+  }
+  
+  .close,
+  .box_modal .close {
+    position: absolute;
+    right: -20px;
+    top:-20px;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background: #1f284b;
+    cursor: pointer;
+  }
+  
+  .box_modal .content {
+    width: 600px;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 50px 20px;
+    position: relative;
+  }
+  
+  .box_modal .content form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+  }
+  
+  .box_modal .content form .line {
+    width: 860px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 40px;
+  }
+  
+  .box_modal .width100 {
+    width: 100%;
+  }
+  
+  .box_modal .width100 div {
+    width: 100%!important;
+  }

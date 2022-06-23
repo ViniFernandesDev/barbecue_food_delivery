@@ -1,0 +1,22 @@
+.formAdd label {
+    width: 100%;
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    color: #262525;
+    margin-bottom: 8px;
+}
+
+.formAdd input {
+    background: #ffffff;
+    border: 1px solid #192540;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: block;
+    font-size: 24px;
+    color: #B8000A;
+}
+
+.cancel > {
+    background: #cdcdcd!important;
+}

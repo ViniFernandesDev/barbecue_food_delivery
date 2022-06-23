@@ -1,0 +1,27 @@
+.detalhes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.detalhes span {
+    display: block;
+    font-size: 32px;
+}
+
+.detalhes a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.detalhes q {
+    width: 100px;
+    height: 100px;
+    background: #cdcdcd;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
