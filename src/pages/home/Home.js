@@ -1,8 +1,28 @@
+import { gql, useQuery } from '@apollo/client';
+
 import Title from '../../components/title/Title';
 import Button from '../../components/button/Button';
 import Item from '../../components/itemPedido/Item';
 
+const GET_LESSONS_QUERY = gql`
+  query {
+    products {
+      id
+      name
+      price
+      image {
+        url
+        thumbnail:url
+      } 
+    }
+  }
+`
+
 function Home() {
+
+    const {data} = useQuery(GET_LESSONS_QUERY);
+
+    console.log(data)
 
     return (
         <>
@@ -26,7 +46,6 @@ function Home() {
             />
 
             <Button link="/adicionar" text="Novo pedido" />
-
         </>
     )
 }

@@ -6,7 +6,11 @@ import Home from './pages/home/Home';
 import Adicionar from './pages/adicionar/Adicionar';
 import Entregas from './pages/entregas/Entregas';
 
+
+
 function App() {
+  
+
   return (
     <Router>
       <Logo/>
