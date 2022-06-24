@@ -15,6 +15,10 @@
     text-align: center;
 }
 
+.detalhes span {
+    margin-bottom: 8px;
+}
+
 .detalhes q {
     width: 100px;
     height: 100px;
@@ -24,4 +28,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.cancel q {
+    background: #DE0A16;
+}
+
+.cancel span {
+    color: #DE0A16;
+}
+
+.pago q {
+    background: #24CD09;
+}
+
+.pago span {
+    color: #24CD09;
 }

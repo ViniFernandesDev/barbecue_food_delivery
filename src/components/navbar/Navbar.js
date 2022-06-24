@@ -1,16 +1,16 @@
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import Container from '../container/Container'
-import styles from './Navbar.module.css'
+import styles from './Navbar.css'
 
 function Navbar() {
     return (
-      <nav className={styles.navbar}>    
+      <nav className="navbar">    
         
           <Container>
-                <ul className={styles.list}>
-                    <li><Link to="/">Pedidos</Link></li>
-                    <li><Link to="/">Entregas</Link></li>
-                    <li><Link to="/">Relatórios</Link></li>
+                <ul className="list">
+                    <li><NavLink to="/home">Pedidos</NavLink></li>
+                    <li><NavLink to="/entregas">Entregas</NavLink></li>
+                    <li><NavLink to="/">Relatórios</NavLink></li>
                 </ul>
           </Container>
           

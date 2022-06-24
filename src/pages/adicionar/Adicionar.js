@@ -5,6 +5,12 @@ import Button from '../../components/button/Button';
 
 function Adicionar() {
 
+    const outDisplay = {
+        display: "flex",
+        justifyContent: "flex-end",
+        gap: "0 25px"
+      };
+
     return (
         <>
 
@@ -14,37 +20,43 @@ function Adicionar() {
                 <label for="">Nome do cliente</label>
                 <input type="text" name="nome" />
 
-                <div className='checkbox'>
-                    <div>
-                        <label>sda</label>
-                        <input type="checkbox" name="nome" />
-                    </div>
+                <div className="checkbox">
+                    <label className="item">
+                        <img src="asd" alt="item"/>
+                        <input type="checkbox"/>
+                        <span className="checkmark"></span>
+                    </label>
 
-                    <div>
-                        <label></label>
-                        <input type="checkbox" name="nome" />
-                    </div>
+                    <label className="item">
+                        <img src="asd" alt="item"/>
+                        <input type="checkbox"/>
+                        <span className="checkmark"></span>
+                    </label>
 
-                    <div>
-                        <label></label>
-                        <input type="checkbox" name="nome" />
-                    </div>
+                    <label className="item">
+                        <img src="asd" alt="item"/>
+                        <input type="checkbox"/>
+                        <span className="checkmark"></span>
+                    </label>
 
-                    <div>
-                        <label></label>
-                        <input type="checkbox" name="nome" />
-                    </div>
+                    <label className="item">
+                        <img src="asd" alt="item"/>
+                        <input type="checkbox"/>
+                        <span className="checkmark"></span>
+                    </label>
                 </div>
 
                 <ItemAddPedido
                     img="ttt"
                     item="Burguer"
-                    quant="2"
+                    quant="1"
                     total="32,00"
                 />
-
-                <Button text="Cadastrar"/>
-                <Button type="cancel" text="Cancelar"/>
+                
+                <div style={outDisplay}>
+                    <Button type="cancel" text="Cancelar"/>
+                    <Button text="Cadastrar"/>
+                </div>
             </form>
 
         </>

@@ -10,12 +10,15 @@ function ItemAddPedido({img, name, quant, item, total}) {
             <div className={styles.txt}>
                 <div>
                     <h2>{item}</h2>
-                    <h3><span>{quant}</span></h3>
+                    <div className={styles.quantidade}>
+                        <span>-</span>
+                        <input type="number" min={quant} name="quant"/>
+                        <span>+</span>
+                    </div>
                     <h4>Total: R${total}</h4>
                 </div>
 
                 <div>
-                    
                     <span>Remover</span>
                 </div>
             </div>

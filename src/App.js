@@ -4,6 +4,7 @@ import Container from './components/container/Container'
 import Logo from './components/logo/Logo'
 import Home from './pages/home/Home';
 import Adicionar from './pages/adicionar/Adicionar';
+import Entregas from './pages/entregas/Entregas';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
 
           <div className='contentMain'>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/adicionar" element={<Adicionar />} />
+              <Route path="/entregas" element={<Entregas />} />
             </Routes>
           </div>
           

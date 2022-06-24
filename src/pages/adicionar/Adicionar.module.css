@@ -7,7 +7,7 @@
     margin-bottom: 8px;
 }
 
-.formAdd input {
+.formAdd input[type="text"] {
     background: #ffffff;
     border: 1px solid #192540;
     border-radius: 8px;
@@ -17,6 +17,20 @@
     color: #B8000A;
 }
 
+.formAdd input[type="number"] {
+    width: 50px;
+    background: #ffffff;
+    border: 1px solid #192540;
+    border-radius: 8px;
+    padding: 4px 0 4px 6px;
+    display: block;
+    font-size: 16px;
+    color: #B8000A;
+    text-align: center;
+}
+
 .cancel > {
     background: #cdcdcd!important;
 }
+
+

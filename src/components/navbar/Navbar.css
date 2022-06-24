@@ -1,0 +1,48 @@
+.navbar {
+    background: #192540;
+    padding: 20px;
+    width: 290px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.navbar li {
+    margin-bottom: 20px;
+}
+
+.navbar li a {
+    width: 100%;
+    display: block;
+    padding: 15px 16px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: left;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #DE0A16;
+    transition: 0.3s all;
+    opacity: 0;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    padding: 15px 35px;
+    color: #DE0A16;
+}
+
+.navbar li .active::after,
+.navbar li a:hover::after {
+    left: 15px;
+    opacity: 1;
+} 

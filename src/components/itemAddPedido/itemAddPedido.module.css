@@ -22,7 +22,22 @@
     width: 700px;
 }
 
-.item .txt div {
+.item .txt a {
+    text-decoration: none;
+}
+
+.item .quantidade {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 5px;
+}
+
+.item .quantidade a {
+    cursor: pointer;
+}
+
+.item .txt > div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
