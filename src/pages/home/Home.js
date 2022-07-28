@@ -7,13 +7,12 @@ import Item from '../../components/itemPedido/Item';
 const GET_LESSONS_QUERY = gql`
   query {
     products {
-      id
       name
       price
       image {
+        id
         url
-        thumbnail:url
-      } 
+      }
     }
   }
 `
@@ -22,28 +21,24 @@ function Home() {
 
     const {data} = useQuery(GET_LESSONS_QUERY);
 
-    console.log(data)
+    console.log(data?.products)
 
     return (
         <>
 
             <Title title="Pedidos" />
 
-            <Item
-                img="ttt"
-                name="Vinicius Fernandes"
-                item="Burguer"
-                quant="2"
-                total="32,00"
-            />
-
-            <Item
-                img="ttt"
-                name="Vinicius Fernandes"
-                item="Burguer"
-                quant="2"
-                total="32,00"
-            />
+            {data?.products.map((item, index) => {
+              return (
+                  <Item key={index}
+                      img={item.image.url}
+                      name={item.name}
+                      item={item.nome_cliente}
+                      quant="2"
+                      total={item.price}
+                  />
+                  )
+            })}
 
             <Button link="/adicionar" text="Novo pedido" />
         </>

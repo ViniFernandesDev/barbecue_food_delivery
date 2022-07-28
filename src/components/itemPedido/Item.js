@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 import styles from './Item.module.css';
 import Modal from '../../components/modal/Modal';
@@ -13,7 +13,7 @@ function Item({img, name, quant, item, total}) {
         <>
 
             <div className={styles.item}>
-            <a onClick={() => setIsModalVisible(true)}>
+            <a href="#" onClick={() => setIsModalVisible(true)}>
                 <div className={styles.img}>
                     <img src={img} alt="item" />
                 </div>

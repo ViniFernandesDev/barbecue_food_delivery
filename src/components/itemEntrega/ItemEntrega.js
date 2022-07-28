@@ -15,7 +15,7 @@ function ItemEntrega({img, name, quant, item, total, btnEntregar}) {
                     <h4>Total: R${total}</h4>
                 </div>
                 
-                <div className={btnEntregar === 'sim' ? "btnBlock" : "btnNone"}>
+                <div className={btnEntregar === 'true' ? "btnBlock" : "btnNone"}>
                     <button>Entregar</button>
                 </div>
             </div>

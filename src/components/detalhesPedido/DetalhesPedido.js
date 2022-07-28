@@ -5,14 +5,14 @@ function DetalhesPedido({img, name, quant, item, total}) {
         <div className={styles.detalhes}>
             
             <div className={styles.cancel}>
-            <a href="">
+            <a>
                 <span>Cancelar Pedido</span>
                 <q>x</q>
             </a>
             </div>
 
             <div className={styles.pago}>
-            <a href="">
+            <a>
                 <span>Pago</span>
                 <q>✓</q>
             </a>
