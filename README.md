@@ -1,5 +1,5 @@
 # Motivações do projeto
-Projeto aode eu pego carne de churrasco no domingo, no meu bairro, a atendente anota tudo no papel, quando é realizado pagamento é entregue outro papel, alguém leva até no outro cômodo os pedidos aonde fica a churrasqueira, 3 escadarias para cima, aí o usuário vai até na fila e entrega o "recibo" para a mulher que entrega e risca um outro papel. Fiz um protótipo no FIGMA, estou usando React com a API no GraphCMS, agora estou tentando conectar no front, no final quero adicionar relatório também de custos e pedidos entregues. 
+Onde eu pego carne de churrasco no domingo, no meu bairro, a atendente anota tudo no papel, quando é realizado pagamento é entregue outro papel, alguém leva até no outro cômodo os pedidos aonde fica a churrasqueira, 3 escadarias para cima, aí o usuário vai até na fila e entrega o "recibo" para a mulher que entrega e risca um outro papel. Fiz um protótipo no FIGMA, estou usando React com a API no GraphCMS, agora estou tentando conectar no front, no final quero adicionar relatório também de custos e pedidos entregues. 
 
 Intenção do Projeto Final:
 https://www.figma.com/file/jNt4qTb81Ozl63QWauefDi/Untitled?node-id=0%3A1
