@@ -3,8 +3,9 @@ import { useState } from "react";
 
 import styles from './Adicionar.module.css';
 import Title from '../../components/title/Title';
-//import ItemAddPedido from '../../components/itemAddPedido/ItemAddPedido';
 import Button from '../../components/button/Button';
+
+import Item from '../../components/itemPedido/Item';
 
 const GET_LESSONS_QUERY = gql`
 query {
@@ -29,29 +30,33 @@ function Adicionar() {
 
       const {data} = useQuery(GET_LESSONS_QUERY);
 
-      console.log(data?.products);
-
       const [checked, setChecked] = useState([]);
 
-      //console.log(checked);
-    
+      function removeItem(e) {
+        const newItems = checked.filter((item) => item.name !== e);
+        setChecked(newItems)
+      }
+
       // Add/Remove checked item from list
         const handleCheck = (event) => {
-            var updatedList = [...checked];
-
             const image = event.currentTarget.getAttribute('data-image');
             const name = event.currentTarget.getAttribute('data-name');
             const price = event.currentTarget.getAttribute('data-price');
 
-            if (event.target.checked) {
-            updatedList = [...checked, ];
-            } else {
-            updatedList.splice(checked.indexOf(event.target.value), 1);
+            let itemCheck = {
+                image: image,
+                name: name,
+                price: price,
             }
-            setChecked(updatedList);
+
+            if (event.target.checked) {
+                setChecked(prev => [...prev, itemCheck]);
+            } else {
+                removeItem(itemCheck.name)
+            }
         };
 
-        
+        console.log(checked)
 
     return (
         <>
@@ -83,6 +88,18 @@ function Adicionar() {
                     <Button text="Cadastrar"/>
                 </div>
             </form>
+
+            {checked?.map((item, index) => {
+              return (
+                  <Item key={index}
+                      img={item.image.url}
+                      name={item.name}
+                      item={item.nome_cliente}
+                      quant="2"
+                      total={item.price}
+                  />
+                  )
+            })}
 
         </>
     )
